@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+const mongoose = require('mongoose')
 
 const Box = new mongoose.Schema({
   title: {
@@ -12,4 +12,4 @@ const Box = new mongoose.Schema({
 }, {
   timestamps: true
 })
-export default mongoose.model("Box", Box)
+module.exports = mongoose.model("Box", Box)
